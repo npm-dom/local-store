@@ -1,6 +1,6 @@
 # local-store [![build status][1]][2]
 
-A localStorage based store
+A localStorage based store with namespacing
 
 ## Example
 
@@ -10,6 +10,9 @@ A localStorage based store
     store.set("foo", "bar")
 
     assert.equal(store.get("foo"), "bar")
+
+    // cleanup
+    store.delete("foo")
 
 ## Example name spaced
 
