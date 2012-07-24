@@ -1,0 +1,36 @@
+{
+  "name": "local-store",
+  "version": "0.0.1",
+  "description": "A localStorage based store with name spacing",
+  "keywords": ["namespace", "local", "localStorage", "store"],
+  "author": "Raynos <raynos2@gmail.com>",
+  "repository": "git://github.com/Colingo/local-store.git",
+  "main": "index",
+  "homepage": "https://github.com/Colingo/local-store",
+  "contributors": [
+    {
+      "name": "Jake Verbaten"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/Colingo/local-store/issues",
+    "email": "raynos2@gmail.com"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "testling": "git://github.com/Raynos/testling#master",
+    "testem": "git://github.com/Raynos/testem#master",
+    "sinon": "1.4.2",
+    "tap": "0.2.5"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/Colingo/local-store/raw/master/LICENSE"
+    }
+  ],
+  "scripts": {
+    "test": "make node-test"
+  }
+}
