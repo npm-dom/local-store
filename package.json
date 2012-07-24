@@ -1,6 +1,6 @@
 {
   "name": "local-store",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "A localStorage based store with name spacing",
   "keywords": ["namespace", "local", "localStorage", "store"],
   "author": "Raynos <raynos2@gmail.com>",
