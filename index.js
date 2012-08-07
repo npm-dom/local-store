@@ -1,11 +1,17 @@
 var LocalStorage = typeof window !== "undefined" && window.localStorage
     , prefixes = {}
+    , store
 
 if (LocalStorage) {
-    module.exports = createLocalStore()
+    store = createLocalStore()
 } else {
-    module.exports = createMemoryStore()
+    store = createMemoryStore()
 }
+
+store.createMemoryStore = createMemoryStore
+store.createLocalStore = createLocalStore
+
+module.exports = store
 
 function createLocalStore(prefix) {
     prefix = prefix || ""
