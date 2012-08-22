@@ -1,6 +1,6 @@
 var test = require("testling")
     , localStore = require("..")
-    , createStore = localStore.createStore
+    , createStore = localStore
     , LocalStorage = typeof window !== "undefined" && window.localStorage
 
 if (LocalStorage) {

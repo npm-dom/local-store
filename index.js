@@ -3,9 +3,9 @@ var LocalStorage = typeof window !== "undefined" && window.localStorage
     , store
 
 if (LocalStorage) {
-    store = createLocalStore()
+    store = createLocalStore
 } else {
-    store = createMemoryStore()
+    store = createMemoryStore
 }
 
 store.createMemoryStore = createMemoryStore
@@ -20,7 +20,6 @@ function createLocalStore(prefix) {
         set: storeSet
         , get: storeGet
         , delete: storeDelete
-        , createStore: createLocalStore
     }
 
     function storeSet(key, value) {
@@ -54,7 +53,6 @@ function createMemoryStore(prefix) {
         set: storeSet
         , get: storeGet
         , delete: storeDelete
-        , createStore: createMemoryStore
     }
 
     function storeSet(key, value) {

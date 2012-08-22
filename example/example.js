@@ -1,4 +1,4 @@
-var store = require("..")
+var store = require("..")()
     , body = document.body
 
 var input = document.createElement("input")
