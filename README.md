@@ -4,28 +4,34 @@ A localStorage based store with namespacing
 
 ## Example
 
-    var store = require("local-store")
-        , assert = require("assert")
+```js
+var Store = require("local-store")
+var assert = require("assert")
+var store = Store()
 
-    store.set("foo", "bar")
+store.set("foo", "bar")
 
-    assert.equal(store.get("foo"), "bar")
+assert.equal(store.get("foo"), "bar")
 
-    // cleanup
-    store.delete("foo")
+// cleanup
+store.delete("foo")
+```
 
 ## Example name spaced
 
-    var createStore = require("local-store").createStore
-        , store = createStore("my-unique-namespace")
+```js
+var Store = require("local-store")
+var assert = require("assert")
+var store = Store("my-unique-namespace")
 
-    store.set("foo", {
-        json: "works too"
-    })
+store.set("foo", {
+    json: "works too"
+})
 
-    assert.deepEqual(store.get("foo"), {
-        json: "works too"
-    })
+assert.deepEqual(store.get("foo"), {
+    json: "works too"
+})
+```
 
 ## Installation
 
